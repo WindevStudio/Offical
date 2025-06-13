@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WinDev Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #100020 0%, #050010 100%);
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav .logo {
+      font-size: 1.4rem;
+      color: #f7d700;
+      font-weight: bold;
+      margin-right: 1cm; /* 1cm space after logo */
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-right: 2cm; /* 2cm space between buttons */
+    }
+
+    .nav-links a:last-child {
+      margin-right: 0; /* Remove margin from last button */
+    }
+
+    .nav-links a:hover {
+      color: #8f42ff;
+    }
+
+    .login {
+      font-weight: bold;
+      white-space: nowrap;
+      margin-left: auto;
+    }
+
+    .main {
+      text-align: center;
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    .main h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(to right, #b78cff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .main h2 {
+      font-size: 2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .main p {
+      max-width: 700px;
+      margin: 20px auto;
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 32px; 
+      border-radius: 25px;
+      background: linear-gradient(to left, #4700f4, #a100ff);
+      color: white;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 0 20px rgba(128,0,255,0.4);
+    }
+
+    .buttons a:hover {
+      background: linear-gradient(to right, #a100ff, #4700f4);
+      box-shadow: 0 0 30px rgba(128,0,255,0.6);
+    }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav .logo {
+        margin-right: 0;
+        margin-bottom: 0.5cm;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        margin-right: 1cm;
+        margin-bottom: 0.5cm;
+      }
+
+      .login {
+        margin-top: 10px;
+        align-self: flex-end;
+      }
+
+      .main h1 {
+        font-size: 2.5rem;
+      }
+
+      .main h2 {
+        font-size: 1.5rem;
+      }
+
+      .buttons a {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">🟡 WinDev Studio</div>
+    <div class="nav-links">
+      <a href="#">Download</a>
+      <a href="#">Versions</a>
+      <a href="#">MarketPlace</a>
+      <a href="#">Programs</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="login">Log in</div>
+  </nav>
+
+  <div class="main">
+    <h1>WinDev Studio</h1>
+    <h2>best way for you</h2>
+    <p>
+      Developing apps lets you make your dream software or app using the ReX programming language. Create something fast, secure, and futuristic.
+    </p>
+    <div class="buttons">
+      <a href="#">Sign up</a>
+      <a href="#">Get Started</a>
+    </div>
+  </div>
+</body>
+</html>
